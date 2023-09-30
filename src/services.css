@@ -293,8 +293,8 @@ td {
     overflow-wrap: break-word;
     text-align: left;
     font-size: 1.5em;
-    height: 45vh;
-    width: 30vh;
+    height: 50vh;
+    width: 35vh;
     border: 2px solid gray;
     border-radius: 8px; 
 }
