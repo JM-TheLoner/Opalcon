@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Opalcon/static/css/main.4a33be54.css",
+    "main.js": "/Opalcon/static/js/main.4abd6824.js",
+    "static/media/eyeimg.png": "/Opalcon/static/media/eyeimg.281e529e6e4838a20a55.png",
+    "static/media/abtimg.jpg": "/Opalcon/static/media/abtimg.893c7e24813c9b9f14e7.jpg",
+    "static/media/Reicon.png": "/Opalcon/static/media/Reicon.1eddf3039466bd86222a.png",
+    "static/media/homeimg.jpg": "/Opalcon/static/media/homeimg.fba0c857ce8b6e1d5d67.jpg",
+    "static/media/bkgimg.jpg": "/Opalcon/static/media/bkgimg.7ce9f4b08affe4e7141f.jpg",
+    "static/media/phone.png": "/Opalcon/static/media/phone.72ac02abb9b719b1a908.png",
+    "static/media/soc.png": "/Opalcon/static/media/soc.25ae5928139753a17790.png",
+    "static/media/phlogo.png": "/Opalcon/static/media/phlogo.5030e17d75688337dafc.png",
+    "static/media/lov.png": "/Opalcon/static/media/lov.0ffc3cab01c034baf0d0.png",
+    "static/media/addicon.png": "/Opalcon/static/media/addicon.c6ffae4e8bcbc787f660.png",
+    "index.html": "/Opalcon/index.html",
+    "main.4a33be54.css.map": "/Opalcon/static/css/main.4a33be54.css.map",
+    "main.4abd6824.js.map": "/Opalcon/static/js/main.4abd6824.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a33be54.css",
+    "static/js/main.4abd6824.js"
+  ]
+}
