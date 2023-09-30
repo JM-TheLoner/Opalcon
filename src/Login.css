@@ -1,0 +1,197 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.Login1 {
+padding: 1rem;
+overflow-y: auto;
+height: 82.5vh;
+display: flex;
+justify-content: center;   
+}
+
+.Wrapper{
+margin-top: 4em;
+width: 50em;
+background: transparent;
+backdrop-filter: blur(20px);
+border: 1px solid rgb(155, 155, 155);
+box-shadow: 0 0 5px rgb(0, 0, 0);
+color: antiquewhite; 
+border-radius: 50px;
+padding: 60px 10px;
+height: 25em;
+}
+
+.loading{
+    color:#000000;
+    margin-top: -0.8em;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    background-color: #949494;
+}
+.failed{
+    color:#ff0000;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+.requirement{
+    color:#ff0000;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+.error{
+    color:#ff0000;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.Login1 h1{
+text-align: center;
+cursor: default;
+font-size: 3em;
+font-weight: 700;
+padding-bottom: 1em;
+color:#020000;
+margin-top: -1em;
+margin-bottom: -0.3em;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Login1 .inputBox{
+width: 100%;
+height: 60px;
+margin-top: 10px;
+position: relative;
+}
+
+.inputBox input{
+width: 50%;
+height: 0%;
+background: transparent;
+border: 2px solid gray;
+border-radius: 40px;
+padding: 20px 40px 20px 20px;
+font-size: 24px;
+font-weight: 600;
+}
+.inputBox input:hover,
+.inputBox input:focus{
+    background-color: #bbbbbb;
+}
+
+.inputBox input::placeholder{
+color:rgb(185, 185, 185)
+}
+
+.Login1 .inputBoxred{
+width: 100%;
+height: 60px;
+margin-top: 10px;
+position: relative;
+}
+
+.inputBoxred input{
+width: 50%;
+height: 0%;
+background: transparent;
+border: 2px solid gray;
+border-radius: 40px;
+box-shadow: 0 0 10px #ff0000;
+padding: 20px 40px 20px 20px;
+font-size: 24px;
+font-weight: 600;
+}
+.inputBoxred input:hover,
+.inputBoxred input:focus{
+    background-color: #bbbbbb;
+}
+
+.inputBoxred input::placeholder{
+color:rgb(185, 185, 185)
+}
+
+.space{
+    margin-top: 1em;
+}
+
+.spaceout{
+    margin-top: -0.2em;
+    font-size: 18px;
+}
+.spaceout:hover,
+.spaceout:focus{
+    color:#ff0000;
+    font-style: italic;
+}
+
+.Login1 .btn{
+padding-top: 5px;
+width: 30%;
+height: 45px;
+background: #b9b9b9;
+border-radius: 40px;
+box-shadow: 0 0 10px rgb(29, 29, 29);
+cursor: pointer;
+color: #000000;
+font-weight: 700;
+font-size:20px;
+}
+
+.Login1 .btn:hover{
+    transform:translateY(0.1em);
+    background-color: #444444;
+}
+
+.Login1 li {
+padding: 1rem;
+cursor: pointer;
+}
+
+.Login1 li:hover, 
+.Login1 li:focus {
+padding: 1rem;
+}
+
+.Login1 li a {
+color: black;
+text-decoration: none;
+}
+
+.Login1 li:hover, 
+.Login1 li:focus, 
+.Login1 li:hover a, 
+.Login1 li:focus a  {
+color: #000000;
+}
+
+
+.Login1 li {
+color: black;
+list-style-type: none
+}
+
+.Login1 ul {
+color: black;
+list-style-type: none;
+flex-wrap: nowrap;
+align-items:flex-end;
+}
+
+.eyebtn1{
+    position: absolute;
+    margin-left: 10.6em;
+    margin-top: -4.8em;
+    background: transparent;
+    border: transparent;
+}
+.eyebtn1:hover{
+    transform: scale(1.1);
+}
+.eye1{
+    height: 7vmin;
+    pointer-events: none;
+    cursor: pointer;    
+}

@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    .Login2 {
+    max-width: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: #fff;
+    background-color: #282c34;
+    height: 82.5vh;
+    display: flex;
+    justify-content: center;   
+    }
+    
+    .changing{
+        color:#000000;
+        margin-top: -0.8em;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.5em;
+        background-color: #949494;
+    }
+
+    .Wrapper{
+    width: 50em;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(155, 155, 155);
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    color: antiquewhite;
+    border-radius: 50px;
+    padding: 60px 10px;
+    height: 25em;
+    }
+    
+    .Login2 h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+    cursor: default;
+    }
+    
+    .Login2 .inputBox{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    position: relative;
+    }
+    .inputBox input{
+        width: 50%;
+        height: 0%;
+        background: transparent;
+        border: 2px solid gray;
+        border-radius: 40px;
+        padding: 20px 40px 20px 20px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .inputBox input::placeholder{
+        color:rgb(173, 173, 173)
+        }
+
+    .inputBox input:hover,
+    .inputBox input:focus{
+    background-color: #bbbbbb;
+}
+    .Login2 .inputBoxred{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    position: relative;
+    }
+    .inputBoxred input{
+        width: 50%;
+        height: 0%;
+        background: transparent;
+        border: 2px solid gray;
+        box-shadow: 0 0 10px #ff0000;
+        border-radius: 40px;
+        padding: 20px 40px 20px 20px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .inputBoxred input::placeholder{
+        color:rgb(173, 173, 173)
+        }
+
+    .inputBoxred input:hover,
+    .inputBoxred input:focus{
+    background-color: #bbbbbb;
+}
+
+    .Login2 .inputBox1{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    }
+    .inputBox1 input{
+    width: 50%;
+    height: 0%;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 40px;
+    padding: 20px 40px 20px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    }
+    .inputBox1 input::placeholder{
+    color:rgb(173, 173, 173)
+    }
+    .inputBox1 input:hover,
+    .inputBox1 input:focus{
+        background-color: #bbbbbb;
+    }
+
+    .Login2 .inputBox1red{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    }
+    .inputBox1red input{
+    width: 50%;
+    height: 0%;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 40px;
+    padding: 20px 40px 20px 20px;
+    box-shadow: 0 0 10px #ff0000;
+    font-size: 24px;
+    font-weight: 600;
+    }
+    .inputBox1red input::placeholder{
+    color:rgb(173, 173, 173)
+    }
+    .inputBox1red input:hover,
+    .inputBox1red input:focus{
+        background-color: #bbbbbb;
+    }
+
+    .inputBoxEmail input::placeholder{
+    color:rgb(173, 173, 173)
+    }
+
+    .Login2 .inputBoxEmail{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    position: relative;
+    }
+
+    .inputBoxEmail input{
+    width: 70%;
+    height: 0%;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 40px;
+    padding: 20px 40px 20px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    justify-content: center;
+    }
+    .inputBoxEmail input:hover,
+    .inputBoxEmail input:focus{
+        background-color: #bbbbbb;
+    }
+    .inputBoxEmailred input::placeholder{
+    color:rgb(173, 173, 173)
+    }
+
+    .Login2 .inputBoxEmailred{
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+    position: relative;
+    }
+
+    .inputBoxEmailred input{
+    width: 70%;
+    height: 0%;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 40px;
+    padding: 20px 40px 20px 20px;
+    box-shadow: 0 0 10px #ff0000;
+    font-size: 24px;
+    font-weight: 600;
+    justify-content: center;
+    }
+    .inputBoxEmailred input:hover,
+    .inputBoxEmailred input:focus{
+        background-color: #bbbbbb;
+    }
+    
+    .Login2 .btn{
+    padding-top: 5px;
+    width: 30%;
+    height: 45px;
+    background: #b9b9b9;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(29, 29, 29);
+    cursor: pointer;
+    color: #000000;
+    font-weight: 700;
+    font-size:20px;
+    }
+    
+    .Login2 li {
+    padding: 1rem;
+    cursor: pointer;
+    }
+    
+    .Login2 li:hover, 
+    .Login2 li:focus {
+    padding: 1rem;
+    }
+    
+    .Login2 li a {
+    color: black;
+    text-decoration: none;
+    }
+    
+    .Login2 li:hover, 
+    .Login2 li:focus, 
+    .Login2 li:hover a, 
+    .Login2 li:focus a  {
+    color: #000000;
+    }
+    
+    
+    .Login2 li {
+    color: black;
+    list-style-type: none
+    }
+    
+    .Login2 ul {
+    color: black;
+    list-style-type: none;
+    flex-wrap: nowrap;
+    align-items:flex-end;
+    }
+    
+    .error1{
+        color:#ff0000;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }
+    .required{
+        color:#ff0000;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.2em;
+        padding-top: 0.4em;
+    }
+    .failed{
+        color:#ff0000;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.2em;
+    }

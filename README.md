@@ -1,8 +1,15 @@
-# Getting Started with Create React App
+# opalcon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First Project. Website for Opalcon Ltd.
 
-## Available Scripts
+**Description:**
+
+Made up mainly of javascript using react
+this connects to the opalconBackend as a backend
+
+If you download this code, run "npm i" in your terminal. this installs all the dependencies used in production
+
+## Available Scripts 
 
 In the project directory, you can run:
 
