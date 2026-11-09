@@ -1,0 +1,175 @@
+.About {
+    max-width: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .About li {
+    color: black;
+    list-style-type: none
+  }
+
+.About ul {
+    color: black;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:flex-end;
+    justify-content: center;
+  }
+  .About ol {
+    color: black;
+    list-style-type: none
+  }
+  
+  .About li {
+    padding: 1rem;
+  }
+  
+  .About li:hover, 
+  .About li:focus {
+    padding: 1rem;
+  }
+  
+  .About li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .About li:hover, 
+  .About li:focus, 
+  .About li:hover a, 
+  .About li:focus a  {
+    color: #000000;
+  }
+  
+  .About li:hover a, 
+  .About li:focus a {
+    cursor:pointer;
+  }
+  
+  .clientellelogo{
+    height: 8vmin;
+    pointer-events: none;
+  }
+  .images{
+    height: 95vh;
+    width: 60vh;
+    pointer-events: none;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .sideimage{
+    margin-top: -15px;
+  }
+
+  .textbox{
+    text-align: right;
+  }
+
+  .story{
+    font-family:'Times New Roman', Times, serif;
+    margin-right: 6em;
+    margin-top: -0.2em;
+    font-size:4em;
+    font-style: italic;
+    color:#2c0101
+  }
+
+  .para1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-right: -1em;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-style: italic;
+    color:#2c0101
+  }
+
+  .para2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-right: -1em;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-style: italic;
+    color:#2c0101
+  }
+
+  .para3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-right: -1em;
+    text-align: left;
+    font-size: 18px;
+    font-style: italic;
+    color:#2c0101
+  }
+
+  .hours{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    margin-right: 9em;
+    margin-top: 0.5em;
+    font-style: italic;
+    color:#2c0101
+  }
+
+  .day1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 2em;
+    margin-left: 16em;
+    color:#2c0101
+  }
+  .day11{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#2c0101
+  }
+  .day2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#2c0101;
+    margin-left: 0.3em;
+  }
+  .day3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#2c0101;
+    margin-left: 0em;
+  }
+  .day4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#2c0101;
+    margin-left: -0.3em;
+  }
+  .day5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#2c0101;
+    margin-left: 0.7em;
+  }
+  .day6{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#2c0101;
+    margin-left: 0.6em;
+  }
+
+  .sameline{
+    display: flex;
+  }
+
+  .clientelle{
+    font-family:'Times New Roman', Times, serif;
+    margin-right: 9.6em;
+    margin-top: 1em;
+    font-size: 2.5em;
+    font-style: italic;
+    color:#2c0101
+  }
+
+  .logolist{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 1em;
+  }

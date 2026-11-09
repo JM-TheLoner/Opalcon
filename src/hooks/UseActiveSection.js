@@ -1,0 +1,1 @@
+// IntersectionObserver for jump links in service details page
