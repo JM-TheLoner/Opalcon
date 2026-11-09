@@ -1,5 +1,4 @@
-// import './App.css';
-// import img from './homeimg.jpg'
+import '../stylesheets/Home.css'
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react'; 
 import Header from '../layout/Header';
@@ -16,10 +15,7 @@ const Home = () => {
   }
 
   return (
-    <div className='Homepagecontainer' style={{
-      // backgroundImage:`url(${img})`,
-      // backgroundSize:'cover'
-      }}>
+    <div className='Homepagecontainer'>
       <Header title="Opalcon Limited"/>
       <h3 className='Top'>
         Opalcon Limited
@@ -37,7 +33,7 @@ const Home = () => {
         <h1 className='Middle2'>
         <p style={{
           fontSize:'1.7em'
-          }}> WIN</p>
+          }}>WIN</p>
         </h1>
       </span>
       <div className='Headspace5'>

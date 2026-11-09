@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react"
 import ServicesSearch from "../services/ServicesSearch" 
 // import ServiceContent from "./ServiceContent"
-// import './services.css'
-// import img from './bkgimg.jpg'
+import '../stylesheets/services.css'
 import Header from '../layout/Header';
 
 const Services = ({ url }) => {
@@ -43,12 +42,9 @@ const Services = ({ url }) => {
 
   return (
     <div>
-      <ServicesSearch search={search} setsearch={setsearch}/>
-      <main className='Servicers' style={{
-      // backgroundImage:`url(${img})`,
-      // backgroundSize:'cover'
-      }}>
       <Header title="Opalcon Limited"/>
+      <ServicesSearch search={search} setsearch={setsearch}/>
+      <main className='Servicers'>
       
         {isLoading && <p classname='Pad'>Loading Services...</p>}
         {!isLoading &&fetchError && <p classname='error2'>{fetchError}</p>}

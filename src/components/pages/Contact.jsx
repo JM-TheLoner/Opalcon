@@ -1,9 +1,4 @@
-// import img from './bkgimg.jpg'
-// import email from './email.png'
-// import lov from './lov.png'
-// import soc from './soc.png'
-// import phone from './phone.png'
-// import './contact.css'
+import '../stylesheets/contact.css'
 import { useEffect } from 'react'
 import Header from '../layout/Header';
 
@@ -14,10 +9,7 @@ const Contact = () => {
  }, [])
 
   return (
-    <div className='Contact' style={{
-      // backgroundImage:`url(${img})`,
-      // backgroundSize:'cover'
-      }}>
+    <div className='Contact'>
       <Header title="Opalcon Limited"/>
         <h1 className='right1'>Give us a call or send us an email</h1>
         <h2 className='right2'>Put your business on the map</h2>

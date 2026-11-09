@@ -1,7 +1,5 @@
-// import image from './abtimg.jpg'
-// import img from './bkgimg.jpg'
-// import './about.css'
-// import logo from './phlogo.png'
+import '../stylesheets/about.css'
+import logo from '../../assets/images/phlogo.png'
 import { useEffect } from 'react'
 import Header from '../layout/Header';
 
@@ -12,10 +10,7 @@ const About = () => {
  }, [])
 
   return (
-    <div className='About' style={{
-      // backgroundImage:`url(${img})`,
-      // backgroundSize:'cover'
-    }}>
+    <div className='About'>
       <Header title="Opalcon Limited"/>
       <div className='sideimage'>
         <img src={'image'} className='images' alt='logo'/>
@@ -48,34 +43,34 @@ const About = () => {
           <h1 className='clientelle'>Our clientele</h1>
           <ul className='logolist'>
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li> 
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li>
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li>
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li>
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li>
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li>
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li>
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li>
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li>
             <li>
-              <img src={'logo'} className="clientellelogo" alt="logo" />
+              <img src={logo} className="clientellelogo" alt="logo" />
             </li>
         </ul>
         </div>

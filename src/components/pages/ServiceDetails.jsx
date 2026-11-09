@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 // import ServiceContentGet from "./ServiceContentGet"
-// import './services.css'
-// import img from './bkgimg.jpg'
+import '../stylesheets/servicedetails.css'
 import Header from '../layout/Header';
 
 const GetOneService = () => {
@@ -44,10 +43,7 @@ const GetOneService = () => {
   
   return (
     <main>
-      <div className='Services' style={{
-        // backgroundImage:`url(${img})`,
-        // backgroundSize:'cover'
-        }}>
+      <div className='Services'>
       <Header title="Opalcon Limited"/>
         {isLoading && <p classname='Pad'>Loading Service Details...</p>}
         {!isLoading && fetchError && <p classname='error2'>{fetchError}</p>}

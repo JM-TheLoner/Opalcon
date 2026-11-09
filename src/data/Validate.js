@@ -1,14 +1,11 @@
 // dev-time check for image 
 // Dev-time data check. Warns in the console. Never changes anything.
-// Call once in main.jsx:
-//
-//   import { validateData } from "./data/validate";
-//   if (import.meta.env.DEV) validateData(categories, subServices, images);
+// Called once in main.jsx
 
 export function validateData(categories, subServices, images) {
   const warn = (msg) => console.warn(`[data] ${msg}`);
 
-  // Duplicate IDs
+  //Check For Duplicate IDs
   const checkDuplicates = (list, label) => {
     const seen = new Set();
     list.forEach(({ id }) => {
