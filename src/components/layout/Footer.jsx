@@ -1,11 +1,8 @@
-import './App.css'
+import '../stylesheets/footer.css'
 import { Link } from 'react-router-dom';
-import DataContext from './context/DataContext'
-import { useContext } from 'react'
 // import ref from './Reicon.png'
 
 const Footer = () => {
-  const {  } = useContext(DataContext)
 
   return (  
     <>

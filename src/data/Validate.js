@@ -9,7 +9,7 @@ export function validateData(categories, subServices, images) {
   const checkDuplicates = (list, label) => {
     const seen = new Set();
     list.forEach(({ id }) => {
-      if (seen.has(id)) warn(`Duplicate ${label} id "${id}"`);
+      if (seen.has(id)) warn(`Duplicate ${label} id: "${id}"`);
       seen.add(id);
     });
   };
@@ -21,7 +21,7 @@ export function validateData(categories, subServices, images) {
   const categoryIds = new Set(categories.map((c) => c.id));
   subServices.forEach((s) => {
     if (!categoryIds.has(s.categoryId)) {
-      warn(`Sub-service "${s.id}" has unknown categoryId "${s.categoryId}"`);
+      warn(`Sub-service "${s.id}" has unknown categoryId: "${s.categoryId}"`);
     }
   });
 
@@ -35,7 +35,7 @@ export function validateData(categories, subServices, images) {
 
     img.serviceIds.forEach((id) => {
       if (!serviceById.has(id)) {
-        warn(`Image "${img.id}" points to unknown sub-service "${id}"`);
+        warn(`Image "${img.id}" points to unknown sub-service: "${id}"`);
       }
     });
 

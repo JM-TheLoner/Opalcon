@@ -1,7 +1,8 @@
-import '../stylesheets/Home.css'
+import '../stylesheets/home.css'
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react'; 
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 
 const Home = () => {
   const navigate = useNavigate()
@@ -42,6 +43,7 @@ const Home = () => {
       <h3 className='End'>
         We understand ideas and are all about solutions
       </h3>
+      <Footer/>
     </div>
   )
 }
