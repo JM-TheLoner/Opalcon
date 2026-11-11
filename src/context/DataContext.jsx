@@ -1,4 +1,4 @@
-import { useState, createContext } from 'react'
+import { createContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const DataContext = createContext()
@@ -6,11 +6,10 @@ const DataContext = createContext()
 export const DataProvider = ({ children }) => {
 
     const navigate = useNavigate()
-    const [status, setstatus] = useState('')
 
     return (
         <DataContext.Provider value={{
-            navigate, status, setstatus
+            navigate
         }}>
         {children}
         </DataContext.Provider>

@@ -1,6 +1,7 @@
 import '../stylesheets/contact.css'
 import { useEffect } from 'react'
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 
 const Contact = () => {
 
@@ -56,6 +57,7 @@ const Contact = () => {
           </figcaption>
         </li>
       </ul>
+      <Footer/>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import '../stylesheets/about.css'
 import logo from '../../assets/images/phlogo.png'
 import { useEffect } from 'react'
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 
 const About = () => {
 
@@ -75,6 +76,7 @@ const About = () => {
         </ul>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

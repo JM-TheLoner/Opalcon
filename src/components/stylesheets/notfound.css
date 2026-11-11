@@ -1,51 +1,188 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
-/* font-family: 'Plus Jakarta Sans', sans-serif; */
 
+
+body::-webkit-scrollbar {
+  display: none;
+}
 .notfound {
-    max-width: 100%;
-    flex-grow: 1;
-    height: 85vh;
-    color: rgb(190, 190, 190);
+    width: 100%;
+    height: 100%;
+    transition: 150ms ease-in-out 0ms;
+    overflow-y: hidden;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+.lostDiv{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    height: calc(100vh - 80px);
 }
-
+.lostTop{    
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: visible;
+}
+.lostImg{
+    height: 250px;
+    width: auto;
+    mask-image: linear-gradient(to right, transparent 0%, black 10%);
+    transition: 150ms ease-in-out 0ms;
+}
+.lostBottom{
+    width: 100%;
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 10px;
+}
+.txtColorRGB{
+    text-shadow: 0 2px 6px rgba(226, 118, 250, 0.718);
+    background: linear-gradient(270deg, #3146ff 0%,#2c5dff 11%,#d67cff 27%,#fd4689 44%,#ff4e51 60%,#ff7214 77%,#ffb20b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 150ms ease-in-out 0ms;
+}
+.lightText{
+  color: #050B1A;
+  transition: 150ms ease-in-out 0ms;
+}
 .topline{
-    padding-top: 8em;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
-
-.first{
-    margin-right: 10px;
+.losthead{
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
     font-size: 100px;
-    margin-top: -3em;
-    font-weight: 300;
     font-style: normal;
-    font-family: 'Times New Roman', Times, serif;
+    transition: 150ms ease-in-out 0ms;
+    line-height: 1;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
-
-.second{
-    font-weight:lighter;
-    font-size: 110px;
-}
-
-.third{
-    margin-left: 10px;
-    font-size: 100px;
-    margin-top: -3em;
-    font-weight: 300;
+.firstLine{
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 23px;
     font-style: normal;
-    font-family: 'Times New Roman', Times, serif;
+    transition: 150ms ease-in-out 0ms;
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
-
-.bottomline{
-    color: rgb(190, 190, 190);
-    margin-top: 2em;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
+.secondLine{
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    font-style: normal;
+    transition: 150ms ease-in-out 0ms;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
-
-.bottomline .link{
-    color: rgb(255, 0, 0)
+.toHomeBtn{  
+    text-decoration: none;
+    cursor: pointer;
+    width: 160px;
+    height: 45px;
+    border-radius: 12px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 150ms ease-in-out 0ms;
 }
-.bottomline .link:hover{
-    color: rgb(153, 0, 0)
+.toHomeBtn:hover{
+    transform: translateY(-1.5px);
+}
+.toHomeContent{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.toHome{
+    color: #F9F9F9;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.toHomeWord{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    height: 100%;
+}
+.toHomeIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+.buttoncolorgrad{
+    background: linear-gradient(90deg,#3146FF 0%,#A45EEA 50%,#FD4689 100%);
+    box-shadow: 0 2px 6px #ff267560 100%;
+    transition: 150ms ease-in-out 0ms;
+}
+.buttoncolorgrad:hover{
+    background: linear-gradient(90deg,#1a31ff 0%,#683eff 50%,#ff1e71 100%);
+    box-shadow: 0 6px 8px -6px #ab0072ce;
+}
+@media screen and (max-height:450.98px) {
+    .notfound {
+        min-height: 100vh;
+        overflow: auto;
+    }
+    .lostDiv{
+        margin-top: 60px;
+        height: fit-content;
+        padding-bottom: 5px;
+    }
+    .losthead{
+        font-weight: 800;
+        font-size: 75px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .firstLine{
+        font-weight: 800;
+        font-size: 18px;
+        margin-bottom: 3px;
+        margin-top: 0px;
+    }
+    .secondLine{
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    .toHomeBtn{  
+        width: 140px;
+        height: 40px;
+        border-radius: 12px;
+    }
 }

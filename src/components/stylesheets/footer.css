@@ -1,95 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Plus Jakarta Sans', sans-serif; */
 
 .Footer {
-  background: #1b1b1b;
-  font-weight:400;
-  font-size:14px;
+  height: 20px;
+  width: 100%;
+  z-index: 9;
+  position: relative;
   display:flex;
-  font-weight: bolder;
-  align-items: center;
-  text-align: left;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  justify-content: center;
+  z-index: 9;
+  transition: 150ms ease-in-out 0ms;
+  background:#FAFAFCae;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
-
-.FooterMotto{
-  padding-top: 0.5em;
-  background: #1b1b1b;
-  font-weight:600;
-  font-size:1em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.Footer::after {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  pointer-events: none;
+  border-top: 2px solid transparent; 
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-image: linear-gradient(270deg, #3146ff 0%,#2c5dff 16%,#d67cff 32%,#fd4689 49%,#ff4e51 65%,#ff802b 82%,#ffb71c 100%);
+  background-origin: border-box;
+  background-clip: border-box;
+  mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
 }
-
-.FooterMotto1{
-  background: #1b1b1b;
-  font-weight:600;
-  font-size:1em;
-  padding-bottom: 0.5em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.Footerwords{
+  padding: 0px 0px;
+  margin: 0px 0px;
 }
-
-.FooterCopyright{
-  background: #1b1b1b;
-  font-weight:600;
-  font-size:0.9em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.footText{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
 }
-
-.Footer ul {
-  color: black;
-  list-style-type: none;
-  display: flex;
-  align-items:flex-end;
-  flex-wrap: nowrap;
-  font-weight:600;
-}
-.Footer ol {
-  color: black;
-  list-style-type: none;
-  display: flex;
-  align-items:flex-end;
-  flex-direction: row;
-}
-
-.Footer li {
-  padding: 1rem;
-}
-
-.Footer li:hover, 
-.Footer li:focus {
-  padding: 1rem;
-}
-
-.Footer li a {
-  color: black;
-  text-decoration: none;
-}
-
-.Footer li:hover, 
-.Footer li:focus, 
-.Footer li:hover a, 
-.Footer li:focus a  {
-  background-color: #424242;
-  color: #000000;
-}
-
-.Footer li:hover a, 
-.Footer li:focus a {
-  cursor: pointer;
-}
-
-.Footer span{
-  color: #1b1b1b;
-  cursor:default;
-}
-.App-link {
-  color: #000000;
-}
-
-.App-link:hover{
-  color: rgb(228, 228, 228);
-}
-.Headspace2{
-  padding-left: 25em;
-}
-.Headspace3{
-  padding-left: 0.5em;
+.txtColor{
+  color: #191919;
 }

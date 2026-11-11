@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 // import ServiceContentGet from "./ServiceContentGet"
 import '../stylesheets/servicedetails.css'
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 
 const GetOneService = () => {
 
@@ -54,6 +55,7 @@ const GetOneService = () => {
           <div></div>
         }
       </div>
+      <Footer/>
     </main>
   )
 }

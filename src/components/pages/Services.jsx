@@ -3,6 +3,7 @@ import ServicesSearch from "../services/ServicesSearch"
 // import ServiceContent from "./ServiceContent"
 import '../stylesheets/services.css'
 import Header from '../layout/Header';
+import Footer from '../layout/Footer';
 
 const Services = ({ url }) => {
   
@@ -55,6 +56,7 @@ const Services = ({ url }) => {
           <div></div>
         }
       </main>
+      <Footer/>
     </div>
   )
 }

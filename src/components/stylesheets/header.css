@@ -120,7 +120,7 @@
   border-bottom: 3px solid transparent; 
   border-image: linear-gradient(90deg, #3146ff 0%,#2c5dff 16%,#d67cff 32%,#fd4689 49%,#ff4e51 65%,#ff802b 82%,#ffb71c 100%);
   border-image-slice: 1;
-  box-shadow: 0 6px 8px -6px #ab0072ce;
+  box-shadow: 0 6px 8px -7px #ab0072ce;
   transform: translateY(-1.5px);
 }
 .linkbtn{

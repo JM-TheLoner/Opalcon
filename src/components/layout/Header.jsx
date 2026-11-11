@@ -1,8 +1,8 @@
 import '../stylesheets/header.css'
 import { Link } from 'react-router-dom';
 import phlogo from '../../assets/images/phlogo.png'
-import { useContext, useEffect, useState, useRef } from 'react'
-import { useScrollDirection } from '../animations/ScrollUpHeader';
+import { useEffect, useState, useRef } from 'react'
+import { useScrollDirection } from '../effects/ScrollUpHeader';
 import { ClipboardList } from "lucide-react";
 import fblogo from '../../assets/images/facebook.png';
 import xlogo from '../../assets/images/twitter.png';
