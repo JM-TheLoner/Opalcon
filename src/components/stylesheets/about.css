@@ -1,178 +1,228 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
-/* font-family: 'Plus Jakarta Sans', sans-serif; */
 
 .About {
-    max-width: 100%;
-    flex-grow: 1;
-    padding: 1rem;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 150ms ease-in-out 0ms;
+  overflow-y: hidden;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background:#FAFAFCae;
+}
+.aboutContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 70px;
+  min-height: calc(100vh - 80px);
+  transition: 150ms ease-in-out 0ms;
+}
+.abtTxtColorRGB{
+  /* text-shadow: 0 2px 6px rgba(226, 118, 250, 0.718); */
+  width: fit-content;
+  /* background: linear-gradient(90deg,#fd4689 0%,#ff4e51 33%,#ff7214 66%,#ffb20b 100%); */
+  background: linear-gradient(90deg,#3146ff 0%,rgb(65, 115, 255) 33%,#d67cff 66%, #920cff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.txtColor{
+  color: #050B1A;
+  transition: 150ms ease-in-out 0ms;
+}
+.aboutLayer{
+  width: 98%;
+  height: fit-content;
+  background: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.topLayer{
+  display: flex;
+  justify-content: space-between;
+  transition: 150ms ease-in-out 0ms;
+}
+.topLayerImage{
+  width: 40%;
+}
+.topLayerText{
+  width: 58%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  transition: 150ms ease-in-out 0ms;
+}
+.ceoimage{
+  width: 100%;
+  border-radius: 10px;
+  pointer-events: none;
+}
+.story{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: 150ms ease-in-out 0ms;
+}
+.paragraph{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: 150ms ease-in-out 0ms;
+}
+.paraTxt{
+  font-family: 'Plus Jakarta Sans', sans-serif;  
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+  transition: 150ms ease-in-out 0ms;
+}
+.uMidLayer{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  transition: 150ms ease-in-out 0ms;
+}
 
-  }
+.uMidLayerVM{
+  width: 40%;
+  height: 150px;
+  border-radius: 12px;
+  padding: 15px 5px 5px 5px;
+  transition: 150ms ease-in-out 0ms;
 
-  .About li {
-    color: black;
-    list-style-type: none
-  }
+  /* to have gradient borders */
+  --bg-color: #fdfcff; /* Set to match your container's background color */
+  border-radius: 12px;
+  border: 1.5px solid transparent;
+  background-image: 
+    linear-gradient(var(--bg-color), var(--bg-color)), 
+    linear-gradient(90deg, #3146ff 0%,#2c5dff 16%,#d67cff 32%,#fd4689 49%,#ff4e51 65%,#ff802b 82%,#ffb71c 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.vmTitle{
+  font-family: 'Plus Jakarta Sans', sans-serif;  
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.3;
+  transition: 150ms ease-in-out 0ms;
+  margin-bottom: 5px;
+}
+.vmBody{
+  font-family: 'Plus Jakarta Sans', sans-serif;  
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+  transition: 150ms ease-in-out 0ms;
+}
+.lMidLayer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  transition: 150ms ease-in-out 0ms;
+}
+.lMidTitle{
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  transition: 150ms ease-in-out 0ms;
+  text-align: left;
+}
+.valuesTitle{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.lMidValues{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  transition: 150ms ease-in-out 0ms;
+  width: 95%;
+}
+.lMidValue{
+  width: 13%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  padding: 15px 5px 5px 5px;
+  transition: 150ms ease-in-out 0ms;  
+  --bg-color: #fdfcff;
+  border-radius: 10px;
+  border: 1.5px solid transparent;
+  background-image: 
+    linear-gradient(var(--bg-color), var(--bg-color)), 
+    linear-gradient(90deg, #3146ff 0%,#2c5dff 16%,#d67cff 32%,#fd4689 49%,#ff4e51 65%,#ff802b 82%,#ffb71c 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.valueTxt{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.3;
+  height: 40%;
+}
+.bottomLayer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  transition: 150ms ease-in-out 0ms;
+  margin-top: 10px;
+}
+.bottomTitle{
+  width: 100%;
+  margin-top: 0px;
+  transition: 150ms ease-in-out 0ms;
+  text-align: center;
+}
+.clientelle{
+  /* font-family: 'Plus Jakarta Sans', sans-serif; */
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  transition: 150ms ease-in-out 0ms;
+  font-style: italic;
+}
+.bottomLogos{
+  transition: 150ms ease-in-out 0ms;
+  width: 100%;
+  margin: 0px;
+}
+.logolist{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  transition: 150ms ease-in-out 0ms;
+}
+.clientellelogo{
+  height: 50px;
+  transition: 150ms ease-in-out 0ms;
+}
+.clientellelogo:hover{
+  transform: translateY(-6px) scale(1.1);
+  margin: 0px 2px 0px 2px;
+}
 
-.About ul {
-    color: black;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items:flex-end;
-    justify-content: center;
-  }
-  .About ol {
-    color: black;
-    list-style-type: none
-  }
-  
-  .About li {
-    padding: 1rem;
-  }
-  
-  .About li:hover, 
-  .About li:focus {
-    padding: 1rem;
-  }
-  
-  .About li a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .About li:hover, 
-  .About li:focus, 
-  .About li:hover a, 
-  .About li:focus a  {
-    color: #000000;
-  }
-  
-  .About li:hover a, 
-  .About li:focus a {
-    cursor:pointer;
-  }
-  
-  .clientellelogo{
-    height: 8vmin;
-    pointer-events: none;
-  }
-  .images{
-    height: 95vh;
-    width: 60vh;
-    pointer-events: none;
-    float: left;
-    margin-right: 10px;
-  }
 
-  .sideimage{
-    margin-top: -15px;
-  }
 
-  .textbox{
-    text-align: right;
-  }
 
-  .story{
-    font-family:'Times New Roman', Times, serif;
-    margin-right: 6em;
-    margin-top: -0.2em;
-    font-size:4em;
-    font-style: italic;
-    color:#2c0101
-  }
 
-  .para1{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-right: -1em;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 18px;
-    font-style: italic;
-    color:#2c0101
-  }
 
-  .para2{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-right: -1em;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 18px;
-    font-style: italic;
-    color:#2c0101
-  }
 
-  .para3{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-right: -1em;
-    text-align: left;
-    font-size: 18px;
-    font-style: italic;
-    color:#2c0101
-  }
-
-  .hours{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 2.5em;
-    margin-right: 9em;
-    margin-top: 0.5em;
-    font-style: italic;
-    color:#2c0101
-  }
-
-  .day1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-right: 2em;
-    margin-left: 16em;
-    color:#2c0101
-  }
-  .day11{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#2c0101
-  }
-  .day2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#2c0101;
-    margin-left: 0.3em;
-  }
-  .day3{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#2c0101;
-    margin-left: 0em;
-  }
-  .day4{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#2c0101;
-    margin-left: -0.3em;
-  }
-  .day5{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#2c0101;
-    margin-left: 0.7em;
-  }
-  .day6{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#2c0101;
-    margin-left: 0.6em;
-  }
-
-  .sameline{
-    display: flex;
-  }
-
-  .clientelle{
-    font-family:'Times New Roman', Times, serif;
-    margin-right: 9.6em;
-    margin-top: 1em;
-    font-size: 2.5em;
-    font-style: italic;
-    color:#2c0101
-  }
-
-  .logolist{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-right: 1em;
-  }

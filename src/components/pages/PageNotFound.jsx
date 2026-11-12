@@ -72,7 +72,7 @@ const Pagenotfound = () => {
                 <Link to={'/Home'} style={linkstyle} className='toHomeContent'>
                     <div className='toHome'>
                       <div className='toHomeIcon' style={{fontSize: '25px'}}>&#8592;</div>
-                      <div className='toHomeWord'>Back Home</div>
+                      <div className='toHomeWord'>To Homepage</div>
                     </div> 
                 </Link>
               </div>
