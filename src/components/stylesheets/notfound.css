@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
-
 body::-webkit-scrollbar {
   display: none;
 }
@@ -14,9 +13,38 @@ body::-webkit-scrollbar {
     background-repeat: no-repeat;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    background:#FAFAFCae;
+    /* background:#FAFAFCae; */
+}
+.notfound::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../../assets//images/backgroundImg1.jpg");
+  /* background-image: url("../../assets//images/backgroundImg2.jpg"); */
+  background-position: center top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
 }
 .lostDiv{
+  background-image:
+    radial-gradient(
+      ellipse at 90% 5%,
+      rgba(184, 164, 255, 0.275),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 5% 75%,
+      rgba(75, 100, 255, 0.09),
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 80% 95%,
+      rgba(162, 80, 255, 0.205),
+      transparent 35%
+    );  
     display: flex;
     flex-direction: column;
     justify-content: center;

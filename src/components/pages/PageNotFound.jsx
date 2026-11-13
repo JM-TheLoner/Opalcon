@@ -69,7 +69,7 @@ const Pagenotfound = () => {
             <p className='secondLine txtColor'>The page you are looking for doesn't exist or has moved.</p>
             <div >
             <div className={`toHomeBtn buttoncolorgrad`}>
-                <Link to={'/Home'} style={linkstyle} className='toHomeContent'>
+                <Link to={'/'} style={linkstyle} className='toHomeContent'>
                     <div className='toHome'>
                       <div className='toHomeIcon' style={{fontSize: '25px'}}>&#8592;</div>
                       <div className='toHomeWord'>To Homepage</div>
