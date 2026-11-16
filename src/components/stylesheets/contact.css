@@ -1,16 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 /* font-family: 'Plus Jakarta Sans', sans-serif; */
 
+body::-webkit-scrollbar {
+  display: none;
+}
 .Contact {
-    max-width: 100%;
-    flex-grow: 1;
-    padding: 1rem;
-    overflow-y: auto;
-    background-color: #fff;
-    background-color: #282c34;
-    min-height: 80vh;
-  }
+  width: 100%;
+  height: 100%;
+  transition: 150ms ease-in-out 0ms;
+  overflow-y: hidden;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.Contact::before{
+  /* content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../../assets//images/backgroundImg1.jpg"); */
 
+  /* background-image: url("../../assets//images/backgroundImg2.jpg"); */
+
+  /* background-position: center top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  pointer-events: none; */
+}
+.contactContainer{
+  /* background-image:
+    radial-gradient(
+      ellipse at 90% 5%,
+      rgba(184, 164, 255, 0.275),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 5% 75%,
+      rgba(75, 100, 255, 0.09),
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 80% 95%,
+      rgba(162, 80, 255, 0.205),
+      transparent 35%
+    );   */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+  padding-top: 10px;
+  min-height: calc(100vh - 80px);
+  transition: 150ms ease-in-out 0ms;
+}
+.contTxtColorRGB{
+  /* text-shadow: 0 2px 6px rgba(226, 118, 250, 0.718); */
+  width: fit-content;
+  background: linear-gradient(90deg,#3146ff 0%,#4173ff 33%,#d67cff 66%, #920cff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.contTxtColorRGB_Rev{
+  /* text-shadow: 0 2px 6px rgba(226, 118, 250, 0.718); */
+  width: fit-content;
+  background: linear-gradient(90deg,#ff2676 0%,#ff3336 33%,#ff7214 66%,#ffb20b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 150ms ease-in-out 0ms;
+}
+.txtColor{
+  color: #050B1A;
+  transition: 150ms ease-in-out 0ms;
+}
+
+
+
+
+  
 .right1{
   text-align: right;
   margin-top: 0.3em;

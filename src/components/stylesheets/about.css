@@ -88,6 +88,9 @@ body::-webkit-scrollbar {
   transition: 150ms ease-in-out 0ms;
   height: 400px;
 }
+.topLayerTextWrapper{
+  width: fit-content;
+}
 .topLayerText{ 
   width: 50%;
   text-align: left;
@@ -141,6 +144,7 @@ body::-webkit-scrollbar {
   margin-top: 0px;
   margin-bottom: 0px;
   transition: 150ms ease-in-out 0ms;
+  width: 100%;
 }
 .paraHead{
   width: 350px;
@@ -185,11 +189,11 @@ body::-webkit-scrollbar {
   box-shadow: 0 6px 8px -6px #ab0072ce;
 }
 .aboutcontent{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .about{
   color: #F9F9F9;
@@ -215,9 +219,6 @@ body::-webkit-scrollbar {
   font-weight: 800;
   height: 90%;
 }
-
-
-
 .topLayerImage{
   width: 50%;
   position: relative;
@@ -225,6 +226,7 @@ body::-webkit-scrollbar {
 }
 .absoluteImgCont{
   position: absolute;
+  width: 100%;
 }
 .absImgDecorBorder{
   position: relative;
@@ -287,6 +289,7 @@ body::-webkit-scrollbar {
   background-color: #f9f7ffb0;
   border: 2px solid #d781ff84;
   box-shadow: 0 1px 3px rgba(215, 118, 250, 0.193);
+  overflow: hidden;
 }
 .vmWords{
   width: 63%;
@@ -414,6 +417,7 @@ body::-webkit-scrollbar {
   line-height: 1.3;
   border-bottom: 2px solid #9000d3b9;
   padding-bottom: 5px;
+  text-align: center;
 }
 .valueDesc{
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -462,10 +466,9 @@ body::-webkit-scrollbar {
 }
 .clientelleListItem{
   display: flex;
-  justify-content: left;
+  justify-content:space-between;
   align-items: center;
-  gap: 5px;
-  width: 13.5%;
+  width: 150px;
   height: 40px;
 }
 .clientellelogo{
@@ -473,16 +476,383 @@ body::-webkit-scrollbar {
   transition: 150ms ease-in-out 0ms;
 }
 .clientelleName{
-  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 1;
   transition: 150ms ease-in-out 0ms;
   font-style: italic;
+  display: flex;
+  justify-content: center;
+  width: 100px;
 }
 
-
-
-
-
-
+@media screen and (max-width:749.98px){
+.aboutContainer{
+  gap: 15px;
+  margin-top: 50px;
+}
+.topLayer{
+  height: fit-content;
+  flex-direction: column-reverse;
+  padding-bottom: 5px;
+}
+.topLayerImage{
+  width: 100%;
+  height: 345px;
+  margin-top: 40px;
+}
+.absoluteImgCont{
+  display: flex;
+  justify-content: center;
+}
+.absImgDecorBorder{
+  width: 94%;
+  max-width: 490px;
+  height: 330px;
+  bottom: 5px;
+  left: 3%;
+}
+.absImgDecor{
+  width: 95%;
+  max-width: 495px;
+  height: 340px;
+  bottom: 0px;
+  left: 2.5%;
+}
+.absImgBack{
+  width: 94%;
+  max-width: 490px;
+  height: 330px;
+  left: 3%;
+}
+.ceoimage{
+  height: 380px;
+  bottom: 0px;
+  left: -60px;
+}
+.topLayerTextWrapper{
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topLayerText{ 
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.headLineContainer{
+  width: 85px;
+  height: 26px;
+}
+.headLine{
+  font-size: 13px;
+}
+.story{
+  font-size: 50px;
+  line-height: 1.2;
+}
+.borderBottom{
+  width: 150px;
+  margin-bottom: 5px;
+}
+.paraHead{
+  width: 300px;
+  font-size: 15px;
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+}
+.paraTxt{
+  width: 330px;
+  font-size: 13px;
+  font-weight: 500px;
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+}
+.aboutbtn{  
+  margin-top: 12px;
+  width: 135px;
+  height: 40px;
+  border-radius: 12px;
+}
+.aboutbtn:hover{
+  transform: translateY(-1px);
+}
+.aboutWord{
+  font-size: 14px;
+  font-weight: 600;
+}
+.abouticon{
+  font-size: 25px;
+}
+.uMidLayer{
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.uMidLayerVM{
+  width: 95%;
+  max-width: 390px;
+  height: 130px;
+}
+.vmWords{
+  width: 65%;
+}
+.vmTitle{ 
+  font-size: 25px;
+  line-height: 1.2;
+}
+.vmBody{
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.vmIcon{
+  width: 35%;
+  height: fit-content;
+}
+.lMidValues{
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lMidValue{
+  width: 100px;
+  flex-shrink: 0;
+  padding: 5px 5px 5px 5px;
+}
+.valueTxt{
+  font-size: 14px;
+}
+.valueDesc{
+  font-size: 10px;
+}
+.logolist{
+  column-gap: 15px;
+}
+.clientelleListItem{
+  width: 100px;
+}
+.clientelleName{
+  font-size: 11px;
+}
+}
+@media screen and (max-width:899.98px) and (min-width:750px){
+.aboutContainer{
+  gap: 15px;
+}
+.topLayer{
+  height: 370px;
+}
+.topLayerText{ 
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+}
+.headLineContainer{
+  width: 85px;
+  height: 26px;
+}
+.headLine{
+  font-size: 13px;
+}
+.story{
+  font-size: 50px;
+  line-height: 1.2;
+}
+.borderBottom{
+  width: 42px;
+}
+.paraHead{
+  width: 300px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.paraTxt{
+  width: 330px;
+  font-size: 13px;
+  font-weight: 500px;
+  line-height: 1.2;
+}
+.aboutbtn{  
+  width: 130px;
+  height: 40px;
+  border-radius: 12px;
+}
+.aboutbtn:hover{
+  transform: translateY(-1px);
+}
+.aboutWord{
+  font-size: 13px;
+  font-weight: 500;
+}
+.abouticon{
+  font-size: 22px;
+}
+.topLayerImage{
+  width: 55%;
+  margin-top: 40px;
+}
+.absImgDecorBorder{
+  width: 410px;
+  height: 330px;
+  bottom: 5px;
+  left: 0px;
+}
+.absImgDecor{
+  width: 415px;
+  height: 340px;
+  bottom: 0px;
+  left: 5px;
+}
+.absImgBack{
+  width: 405px;
+  height: 330px;
+  bottom: 0px;
+  left: 0px;
+}
+.ceoimage{
+  height: 380px;
+  bottom: 0px;
+  left: -20px;
+}
+.uMidLayerVM{
+  width: 45%;
+  height: 150px;
+}
+.vmWords{
+  width: 60%;
+}
+.vmTitle{ 
+  font-size: 25px;
+  line-height: 1.2;
+}
+.vmBody{
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.vmIcon{
+  width: 40%;
+  height: fit-content;
+}
+.lMidValues{
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lMidValue{
+  width: 140px;
+  flex-shrink: 0;
+  padding: 5px 5px 5px 5px;
+}
+.valueTxt{
+  font-size: 14px;
+}
+.valueDesc{
+  font-size: 10px;
+}
+.logolist{
+  column-gap: 10px;
+}
+.clientelleListItem{
+  width: 100px;
+}
+.clientelleName{
+  width: 70px;
+}
+}
+@media screen and (max-width:1050.98px) and (min-width:900px){
+.aboutContainer{
+  gap: 15px;
+}
+.topLayer{
+  height: 380px;
+}
+.topLayerText{ 
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+}
+.headLineContainer{
+  width: 90px;
+  height: 27px;
+}
+.headLine{
+  font-size: 14px;
+}
+.story{
+  font-size: 55px;
+  line-height: 1.2;
+}
+.borderBottom{
+  width: 45px;
+}
+.paraHead{
+  width: 300px;
+  font-size: 19px;
+  line-height: 1.2;
+}
+.paraTxt{
+  width: 330px;
+  font-size: 14px;
+  font-weight: 500px;
+  line-height: 1.2;
+}
+.aboutbtn{  
+  width: 140px;
+  height: 43px;
+  border-radius: 12px;
+}
+.aboutbtn:hover{
+  transform: translateY(-1px);
+}
+.aboutWord{
+  font-size: 14px;
+  font-weight: 500;
+}
+.abouticon{
+  font-size: 23px;
+}
+.topLayerImage{
+  width: 55%;
+  margin-top: 40px;
+}
+.absImgDecorBorder{
+  width: 475px;
+  height: 340px;
+  bottom: 5px;
+  left: 0px;
+}
+.absImgDecor{
+  width: 480px;
+  height: 345px;
+  bottom: 0px;
+  left: 5px;
+}
+.absImgBack{
+  width: 475px;
+  height: 340px;
+  bottom: 0px;
+  left: 0px;
+}
+.ceoimage{
+  height: 390px;
+  bottom: 0px;
+  left: -15px;
+}
+.lMidValue{
+  width: 14%;
+  padding: 10px 5px 5px 5px;
+}
+.valueTxt{
+  font-size: 14px;
+}
+.valueDesc{
+  font-size: 10px;
+}
+}

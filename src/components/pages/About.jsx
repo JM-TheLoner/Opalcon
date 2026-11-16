@@ -19,17 +19,17 @@ const About = () => {
   const clientelle = [
     {id: 0, icon: logo, name:'Noviteck', alt: 'Client Logo Icon'},
     {id: 1, icon: logo, name:'Questline', alt: 'Client Logo Icon'},
-    {id: 2, icon: logo, name:'Blooming corp', alt: 'Client Logo Icon'},
-    {id: 3, icon: logo, name:'Stark Loyalties', alt: 'Client Logo Icon'},
+    {id: 2, icon: logo, name:'Bloomers', alt: 'Client Logo Icon'},
+    {id: 3, icon: logo, name:'Stark Loyal', alt: 'Client Logo Icon'},
     {id: 4, icon: logo, name:'Urban West', alt: 'Client Logo Icon'},
     {id: 5, icon: logo, name:'Lumina', alt: 'Client Logo Icon'},
     {id: 6, icon: logo, name:'Agen Kolar', alt: 'Client Logo Icon'},
-    {id: 7, icon: logo, name:'Thel Vadamee', alt: 'Client Logo Icon'},
-    {id: 8, icon: logo, name:'San Shayuum', alt: 'Client Logo Icon'},
+    {id: 7, icon: logo, name:'Thel Vadam', alt: 'Client Logo Icon'},
+    {id: 8, icon: logo, name:'SanShyuum', alt: 'Client Logo Icon'},
     {id: 9, icon: logo, name:'Dathomiri', alt: 'Client Logo Icon'},
     {id: 10, icon: logo, name:'Ah Tabai', alt: 'Client Logo Icon'},
-    {id: 11, icon: logo, name:'Borgia Holdings', alt: 'Client Logo Icon'},
-    {id: 12, icon: logo, name:'Naboo Council', alt: 'Client Logo Icon'},
+    {id: 11, icon: logo, name:'Borgia', alt: 'Client Logo Icon'},
+    {id: 12, icon: logo, name:'Naboo', alt: 'Client Logo Icon'},
     {id: 13, icon: logo, name:'Pillar of Autumn', alt: 'Client Logo Icon'}
   ]
 
@@ -47,7 +47,7 @@ const About = () => {
       <div className='aboutContainer'>
         <Reveal className='aboutLayer topLayer'>
           <div className='topLayerText'>
-            <div>
+            <div className='topLayerTextWrapper'>
               <div className='headLineContainer'>
                 <div className="headWrap">
                   <h1 className="headLine ">About Us</h1> 
@@ -74,8 +74,7 @@ const About = () => {
                       </div> 
                   </Link>
               </div>           
-            </div>
-            
+            </div>            
           </div>
           <div className='topLayerImage'>
             <div className='absoluteImgCont'>
@@ -99,7 +98,7 @@ const About = () => {
           </div>          
         </Reveal>
         <Reveal className='aboutLayer uMidLayer'>
-          <div className='uMidLayerVM colorfulBorder'>
+          <div className='uMidLayerVM'>
             <div className='vmWords'>
               <div className='vmTitle'>
                   <div className='txtColor' style={{marginRight:"5px"}}>Our</div>
@@ -118,12 +117,20 @@ const About = () => {
                   <stop stopColor="#920cff" offset="100%" />
                 </linearGradient>
               </svg>
+              <svg width="0" height="0" style={{ position: 'absolute' }}>
+                <linearGradient id="icon-gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop stopColor="#ff2676" offset="0%" />
+                  <stop stopColor="#ff3336" offset="33%" />
+                  <stop stopColor="#ff7214" offset="66%" />
+                  <stop stopColor="#ffb20b" offset="100%" />
+                </linearGradient>
+              </svg>
               <div className='txtColor vismisicon'>
                 <Telescope size={125} style={{ stroke: 'url(#icon-gradient-1)', fill: 'none' }}/>
               </div>
             </div>
           </div>
-          <div className='uMidLayerVM colorfulBorder1'>
+          <div className='uMidLayerVM'>
             <div className='vmWords'>
               <div className='vmTitle'>
                   <div className='txtColor' style={{marginRight:"5px"}}>Our</div>
@@ -135,7 +142,7 @@ const About = () => {
             </div>
             <div className='vmIcon'>
               <div className='txtColor vismisicon'>
-                <GiBullseye size={125} style={{ fill: 'url(#icon-gradient-1)', transform:"rotate(180deg)" }}/>
+                <GiBullseye size={125} style={{ fill: 'url(#icon-gradient-2)', transform:"rotate(180deg)" }}/>
               </div>
             </div>
           </div>
@@ -158,12 +165,12 @@ const About = () => {
             <div className='lMidValue'>
               <FaHandshake size={60} color='#3146ff' className='valueIcon'/>
               <p className='valueTxt txtColor'>Integrity</p>
-              <p className='valueDesc txtColor'>Building relationships through honesty and transparency.</p>
+              <p className='valueDesc txtColor'>Building relations with truth and transparency.</p>
             </div>
             <div className='lMidValue'>
               <LuCrown size={60} color='#ffb20b' className='valueIcon'/>
               <p className='valueTxt txtColor'>Excellence</p>
-              <p className='valueDesc txtColor'>Maintaining high standards in every project we undertake</p>
+              <p className='valueDesc txtColor'>Maintaining high standards in every project</p>
             </div>
             <div className='lMidValue'>
               <MdGroups size={60} color='#920cff' className=''/>
