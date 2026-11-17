@@ -20,18 +20,17 @@ body::-webkit-scrollbar {
   inset: 0;
   z-index: -1;
   background-image: url("../../assets//images/backgroundImg1.jpg");
-  /* background-image: url("../../assets//images/backgroundImg2.jpg"); */
   background-position: center top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.4;
   pointer-events: none;
 }
 .aboutContainer{
   background-image:
     radial-gradient(
       ellipse at 90% 5%,
-      rgba(184, 164, 255, 0.275),
+      rgba(184, 164, 255, 0.111),
       transparent 38%
     ),
     radial-gradient(
@@ -46,7 +45,7 @@ body::-webkit-scrollbar {
     );  
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
   margin-top: 60px;
