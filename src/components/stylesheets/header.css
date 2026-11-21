@@ -4,7 +4,7 @@
   display: none;
 }
 .Header {
-  height: 60px;
+  height: 55px;
   width: 100%;
   z-index: 9;
   position: fixed;
@@ -36,7 +36,7 @@
   pointer-events: none; /* Allows clicks to pass through to elements underneath */
   
   /* Creates space only at the bottom */
-  border-bottom: 5px solid transparent; 
+  border-bottom: 3px solid transparent; 
   
   /* Smoothly round the bottom corners */
   border-bottom-left-radius: 15px;
@@ -67,12 +67,12 @@
   justify-content: center;
 }
  .logoimg{
-  height: 50px;
+  height: 45px;
   pointer-events: none;
 }
 .headtxt{
   font-size: 23px;
-  font-weight: 700;
+  font-weight: 800;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -146,23 +146,23 @@
 .quotebtn{  
   text-decoration: none;
   cursor: pointer;
-  width: 130px;
+  width: 140px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 20px;
   display:flex;
   justify-content: center;
   align-items: center;
   transition: 150ms ease-in-out 0ms;
 }
 .quotebtn:hover{
-  transform: translateY(-1.5px);
+  transform: translateY(-1px);
 }
 .quotecontent{
-    width: 100%;
-    height: 100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .quote{
   color: #F9F9F9;
@@ -270,7 +270,7 @@
     padding-bottom: 2px;
   }
   .logoimg{
-    height: 43.5px;
+    height: 43px;
     pointer-events: none;
   }
   .smallTopRight{
@@ -315,11 +315,11 @@
   }
   .smalllinks {
     position: fixed;   /* Fixes it relative to the mobile screen viewport boundary */
-    top: 60px;
+    top: 45px;
     left: 0;
     width: 100vw;
     height: 100vh;    /* Completely forces coverage over the full device screen */
-    z-index: 8;       /* Sits below hamburger (10) but above content layout views */
+    z-index: 5;       /* Sits below hamburger (10) but above content layout views */
     overflow: hidden; /* Prevents internal structural movement layout leaks */
     animation: fadeIn 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
@@ -332,6 +332,7 @@
     width: 100vw;
   }
   .navBarright{
+    padding-top: 15px;
     width:100%;
     transition: 150ms ease-in-out 0ms;
     display: flex;
@@ -414,7 +415,6 @@
     align-items: center;
     padding-left: 3px;
     transition: 150ms ease-in-out 0ms;
-    background-color: red;
   }  
   .contLinks{
     width: 100%;
@@ -444,7 +444,7 @@
     gap: 5%;
   }
   .logoimg{
-    height: 35.5px;
+    height: 40px;
   }
   .headtxt{
     font-size: 17px;
@@ -482,7 +482,7 @@
     height: 50px;
     }
   .logoimg{
-    height: 36px;
+    height: 40px;
   }
   .headtxt{
     font-size: 17px;

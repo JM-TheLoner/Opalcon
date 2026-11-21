@@ -112,9 +112,9 @@ const Header = () => {
             <div ref={topRef} style={{ position: 'absolute', top: 0, left: 0 }} />
             <header  className={`smallHead ${scrollDirection === 'down' ? 'header--hidden' : ''}`}>
                 <div className='smallTopbar'>
-                    <div className='smallTopLeft'>
+                    <Link to={'/'} className='smallTopLeft'>
                         <img src={phlogo} className="logoimg" alt="logo"/> 
-                    </div>
+                    </Link>
                     <div className='smallTopRight'>
                         <button className={`hamburger ${isActive ? 'active' : ''}`} onClick={(e)=>handleslider(e)} aria-label="Toggle navigation" aria-expanded={isActive}>
                             <span className='bar lbar'></span>

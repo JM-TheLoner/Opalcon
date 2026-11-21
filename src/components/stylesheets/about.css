@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("../../assets//images/backgroundImg1.jpg");
+  background-image: url("../../assets/images/backgroundImgAbout.jpg");
   background-position: center top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -48,9 +48,9 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  margin-top: 60px;
+  margin-top: 55px;
   padding-top: 10px;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 75px);
   transition: 150ms ease-in-out 0ms;
 }
 .abtTxtColorRGB{
@@ -166,9 +166,9 @@ body::-webkit-scrollbar {
 .aboutbtn{  
   text-decoration: none;
   cursor: pointer;
-  width: 150px;
+  width: 160px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 20px;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -184,7 +184,7 @@ body::-webkit-scrollbar {
   transition: 150ms ease-in-out 0ms;
 }
 .aboutbuttoncolorgrad:hover{
-  background: linear-gradient(90deg,#ff3881 0%,#ff494c 33%,#ff771c 66%,#ffb20c 100%);
+  background: linear-gradient(90deg,#0018f2 0%,#0f47ff 30%,#9c1bff 100%);
   box-shadow: 0 6px 8px -6px #ab0072ce;
 }
 .aboutcontent{
@@ -572,9 +572,9 @@ body::-webkit-scrollbar {
 }
 .aboutbtn{  
   margin-top: 12px;
-  width: 135px;
+  width: 145px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 .aboutbtn:hover{
   transform: translateY(-1px);
@@ -677,9 +677,9 @@ body::-webkit-scrollbar {
   line-height: 1.2;
 }
 .aboutbtn{  
-  width: 130px;
+  width: 140px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 .aboutbtn:hover{
   transform: translateY(-1px);
@@ -803,7 +803,7 @@ body::-webkit-scrollbar {
   line-height: 1.2;
 }
 .aboutbtn{  
-  width: 140px;
+  width: 150px;
   height: 43px;
   border-radius: 12px;
 }

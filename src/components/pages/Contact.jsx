@@ -28,94 +28,92 @@ const Contact = () => {
   const[nocontactaddress, setnocontactaddress] = useState(false)
   const[nomessage, setnomessage] = useState(false)
 
-const [reviewDisplay, setReviewDisplay] = useState(0);
-const [reviewPageCount, setReviewPageCount] = useState(1);
+  const [reviewDisplay, setReviewDisplay] = useState(0)
+  const [reviewPageCount, setReviewPageCount] = useState(1)
 
-const testimonialRef = useRef(null);
-const targetPageRef = useRef(0);
+  const testimonialRef = useRef(null);
+  const targetPageRef = useRef(0);
 
-const goToReviewPage = (page) => {
-  const slider = testimonialRef.current;
+  const goToReviewPage = (page) => {
+  const slider = testimonialRef.current
   if (!slider) return;
 
-  const pageCount = Math.max(1, Math.ceil(slider.scrollWidth / slider.clientWidth));
+  const pageCount = Math.max(1, Math.ceil(slider.scrollWidth / slider.clientWidth))
 
   // Wrap the requested page around the available pages
-  const nextPage = (page + pageCount) % pageCount;
+  const nextPage = (page + pageCount) % pageCount
 
   // Store the intended destination immediately
-  targetPageRef.current = nextPage;
-  setReviewDisplay(nextPage);
+  targetPageRef.current = nextPage
+  setReviewDisplay(nextPage)
 
-  const maxScroll = slider.scrollWidth - slider.clientWidth;
-  const targetPosition = Math.min(nextPage * slider.clientWidth, maxScroll);
+  const maxScroll = slider.scrollWidth - slider.clientWidth
+  const targetPosition = Math.min(nextPage * slider.clientWidth, maxScroll)
 
   slider.scrollTo({
     left: targetPosition,
     behavior: 'smooth'
-  });
-};
+  })
+  }
+  const moveRight = () => {
+    goToReviewPage(targetPageRef.current + 1)
+  }
+  const moveLeft = () => {
+    goToReviewPage(targetPageRef.current - 1)
+  }
 
-const moveRight = () => {
-  goToReviewPage(targetPageRef.current + 1);
-};
+  useEffect(() => {
+    const slider = testimonialRef.current
+    if (!slider) return
 
-const moveLeft = () => {
-  goToReviewPage(targetPageRef.current - 1);
-};
+    let scrollTimer
 
-useEffect(() => {
-  const slider = testimonialRef.current;
-  if (!slider) return;
+    const updatePageCount = () => {
+      const count = Math.max(1, Math.ceil(slider.scrollWidth / slider.clientWidth) )
 
-  let scrollTimer;
+      setReviewPageCount(count)
 
-  const updatePageCount = () => {
-    const count = Math.max(1, Math.ceil(slider.scrollWidth / slider.clientWidth) );
-
-    setReviewPageCount(count);
-
-    if (targetPageRef.current >= count) {
-      targetPageRef.current = count - 1;
-      setReviewDisplay(count - 1);
+      if (targetPageRef.current >= count) {
+        targetPageRef.current = count - 1
+        setReviewDisplay(count - 1)
+      }
     }
-  };
 
-  const handleScroll = () => {
-    const maxScroll = slider.scrollWidth - slider.clientWidth;
+    const handleScroll = () => {
+      const maxScroll = slider.scrollWidth - slider.clientWidth;
 
-    // Identify the page currently closest to the visible position
-    const currentPage =
-      slider.scrollLeft >= maxScroll - 5
-        ? reviewPageCount - 1
-        : Math.round(slider.scrollLeft / slider.clientWidth);
+      // Identify the page currently closest to the visible position
+      const currentPage =
+        slider.scrollLeft >= maxScroll - 5
+          ? reviewPageCount - 1
+          : Math.round(slider.scrollLeft / slider.clientWidth);
 
-    setReviewDisplay(currentPage);
+      setReviewDisplay(currentPage);
 
-    // Wait until scrolling settles before updating the intended destination
-    clearTimeout(scrollTimer);
+      // Wait until scrolling settles before updating the intended destination
+      clearTimeout(scrollTimer);
 
-    scrollTimer = setTimeout(() => {
-      targetPageRef.current = currentPage;
-    }, 150);
-  };
+      scrollTimer = setTimeout(() => {
+        targetPageRef.current = currentPage;
+      }, 150);
+    };
 
-  updatePageCount();
+    updatePageCount();
 
-  const observer = new ResizeObserver(updatePageCount);
-  observer.observe(slider);
+    const observer = new ResizeObserver(updatePageCount);
+    observer.observe(slider);
 
-  window.addEventListener('resize', updatePageCount);
-  slider.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', updatePageCount);
+    slider.addEventListener('scroll', handleScroll);
 
-  return () => {
-    clearTimeout(scrollTimer);
-    observer.disconnect();
-    window.removeEventListener('resize', updatePageCount);
-    slider.removeEventListener('scroll', handleScroll);
-  };
-}, [reviewPageCount]);
-
+    return () => {
+      clearTimeout(scrollTimer);
+      observer.disconnect();
+      window.removeEventListener('resize', updatePageCount);
+      slider.removeEventListener('scroll', handleScroll);
+    };
+  }, [reviewPageCount])
+  
   const reviews =[
     {id: 0, key: 1, name: "Ebatamehi Andrew", descriptor: "Email Marketer", profilePic: "", review: "Working with him was a great experience. He understood the requirements and delivered a solution that met our needs."},
     {id: 1, key: 1, name: "Solomon-Eseh Emmanuel", descriptor: "Entrepreneur", profilePic: "", review: "He was professional, creative, and attentive to detail throughout the project."},
@@ -133,87 +131,87 @@ useEffect(() => {
 
   useEffect(()=>{
     window.scrollTo(0,0)
- }, [])
+  }, [])
 
- const fullnamer= () => {
-  setnofullname(true)
-} 
- const emailer= () => {
-  setnocontactemail(true)
-} 
- const addresser= () => {
-  setnocontactaddress(true)
-} 
- const messager= () => {
-  setnomessage(true)
-} 
+  const fullnamer= () => {
+    setnofullname(true)
+  } 
+  const emailer= () => {
+    setnocontactemail(true)
+  } 
+  const addresser= () => {
+    setnocontactaddress(true)
+  } 
+  const messager= () => {
+    setnomessage(true)
+  } 
 
- const handleContact = async (e) => { 
-  e.preventDefault()
-  setnofullname(false)
-  setnocontactaddress(false)
-  setnocontactemail(false)
-  setnomessage(false)
+  const handleContact = async (e) => { 
+    e.preventDefault()
+    setnofullname(false)
+    setnocontactaddress(false)
+    setnocontactemail(false)
+    setnomessage(false)
 
-  if (!fullname || !contactaddress || !contactemail || !message){
-    if (fullname){        
-      if (contactemail){        
-        if (contactaddress){          
-          if (message){
+    if (!fullname || !contactaddress || !contactemail || !message){
+      if (fullname){        
+        if (contactemail){        
+          if (contactaddress){          
+            if (message){
+            } else{
+              alert('Please Type a Message')
+            }
           } else{
-            alert('Please Type a Message')
-          }
+            alert('Please Type A Subject/Headline')
+          }        
         } else{
-          alert('Please Type A Subject/Headline')
-        }        
+          alert('Please Type Your Email')
+        }      
       } else{
-        alert('Please Type Your Email')
-      }      
-    } else{
-      alert('Please Type Your Name')
+        alert('Please Type Your Name')
+      }
+    }
+    
+
+    if (!fullname){
+        fullnamer()
+    }
+    if (!contactaddress){
+        addresser()
+    }
+    if (!contactemail){
+        emailer()
+    }
+    if (!message){
+        messager()
+    }
+    if (fullname && contactaddress && contactemail && message){
+      emailjs.sendForm(
+        //add emailjs service and template codes as well as public Key before deploying
+        'service_code',
+        'template_code', 
+        form.current, 
+        {
+          publicKey: 'publicKey',
+        }
+      )
+      .then( 
+        () => {
+          alert('Message Sent!');
+          setfullname('')
+          setcontactaddress('')
+          setcontactemail('')
+          setmessage('')
+          navigate('/')        
+          window.scrollTo(0,0)
+        },
+        (error) => {
+          alert('FAILED. Please Try Again');
+          console.log('FAILED...', error.text);
+        },
+      );
     }
   }
-  
-
-  if (!fullname){
-      fullnamer()
-  }
-  if (!contactaddress){
-      addresser()
-  }
-  if (!contactemail){
-      emailer()
-  }
-  if (!message){
-      messager()
-  }
-  if (fullname && contactaddress && contactemail && message){
-    emailjs.sendForm(
-      //add emailjs service and template codes as well as public Key before deploying
-      'service_code',
-      'template_code', 
-      form.current, 
-      {
-        publicKey: 'publicKey',
-      }
-    )
-    .then( 
-      () => {
-        alert('Message Sent!');
-        setfullname('')
-        setcontactaddress('')
-        setcontactemail('')
-        setmessage('')
-        navigate('/')        
-        window.scrollTo(0,0)
-      },
-      (error) => {
-        alert('FAILED. Please Try Again');
-        console.log('FAILED...', error.text);
-      },
-    );
-  }
-}
 
   return (
     <div className='Contact'>
@@ -265,8 +263,8 @@ useEffect(() => {
                   onClick={() => goToReviewPage(index)}
                   className={
                     reviewDisplay === index
-                      ? 'reviewScrollHere scrollstop'
-                      : 'reviewScrollThere scrollstop'
+                      ? 'reviewScrollHere'
+                      : 'reviewScrollThere'
                   }
                 />
               ))}

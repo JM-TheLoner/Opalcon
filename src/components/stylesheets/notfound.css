@@ -20,12 +20,11 @@ body::-webkit-scrollbar {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("../../assets//images/backgroundImg1.jpg");
-  /* background-image: url("../../assets//images/backgroundImg2.jpg"); */
+  background-image: url("../../assets/images/backgroundImgHome.png");
   background-position: center top;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.3;
   pointer-events: none;
 }
 .lostDiv{
@@ -130,9 +129,9 @@ body::-webkit-scrollbar {
 .toHomeBtn{  
     text-decoration: none;
     cursor: pointer;
-    width: 160px;
-    height: 45px;
-    border-radius: 12px;
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -210,8 +209,8 @@ body::-webkit-scrollbar {
         margin-top: 0px;
     }
     .toHomeBtn{  
-        width: 140px;
+        width: 150px;
         height: 40px;
-        border-radius: 12px;
+        border-radius: 20px;
     }
 }
