@@ -1356,11 +1356,6 @@ body::-webkit-scrollbar {
   }
   .homeImgCont{
     width: 95%; 
-   
-    /* background: linear-gradient(35deg, #c552ff5b 0%, #a24bff53 50%, #3c26ff71 100%);
-    border: 2px solid rgba(240, 240, 240, 0.53);
-    box-shadow: 0 10px 20px rgba(165, 69, 255, 0.386);
-    border-radius: 12px; */
   }
   .imgNav{
     opacity: 0.8;

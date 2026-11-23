@@ -399,8 +399,7 @@ const handleScroll = () => {
               </Link>
             </div>
           </div>
-        </Reveal>
-        
+        </Reveal>        
       </div>
       <Footer/>
     </div>
