@@ -239,7 +239,7 @@ const handleScroll = () => {
                 </button>                      
               </div>    
             </div>
-            <div className='scrollPoints'> 
+            <div className='scrollPointsHome'> 
               {images.map((image, index) => (
                 <div
                   key={image.id}
@@ -270,35 +270,35 @@ const handleScroll = () => {
             </svg>
             <div className='quality qualityBorder'>
               <div className='qualityIcon'>
-                <FaPalette style={{ fill: 'url(#icon-gradient-1)' }} size={40}/>
+                <FaPalette style={{ fill: 'url(#icon-gradient-1)' }} className='qualityIconSize'/>
               </div>                
               <p className='txtColor qualityWords'>Creative Design</p>
               <p className='txtColor qualityWordsDesc'>Ideas made visually compelling.</p>
             </div>
             <div className='quality qualityBorder'>
               <div className='qualityIcon'>
-                <FaRegLightbulb style={{ fill: 'url(#icon-gradient-1)' }} size={40}/>
+                <FaRegLightbulb style={{ fill: 'url(#icon-gradient-1)' }} className='qualityIconSize'/>
               </div>                
-              <p className='txtColor qualityWords'>Operational Excellence</p>
+              <p className='txtColor qualityWords'>Functional Excellence</p>
               <p className='txtColor qualityWordsDesc'>Functionality with Purpose</p>
             </div>
             <div className='quality qualityBorder'>
               <div className='qualityIcon'>
-                <IoRocket style={{ fill: 'url(#icon-gradient-1)' }} size={40}/>
+                <IoRocket style={{ fill: 'url(#icon-gradient-1)' }} className='qualityIconSize'/>
               </div>                
               <p className='txtColor qualityWords'>Strategic Branding</p>
               <p className='txtColor qualityWordsDesc'>Brands built with purpose.</p>
             </div>
             <div className='quality qualityBorder'>
               <div className='qualityIcon'>
-                <PiHandshakeFill style={{ fill: 'url(#icon-gradient-1)' }} size={45}/>
+                <PiHandshakeFill style={{ fill: 'url(#icon-gradient-1)' }} className='qualityIconSizeBig'/>
               </div>                
               <p className='txtColor qualityWords'>Dedicated Support</p>
               <p className='txtColor qualityWordsDesc'>We're here every step.</p>
             </div>
             <div className='quality'>
               <div className='qualityIcon'>
-                <IoBarChart style={{ fill: 'url(#icon-gradient-1)' }} size={35}/>
+                <IoBarChart style={{ fill: 'url(#icon-gradient-1)' }} className='qualityIconSizeSmall'/>
               </div>                
               <p className='txtColor qualityWords'>Measurable Impact</p>
               <p className='txtColor qualityWordsDesc'>Results that make a difference.</p>

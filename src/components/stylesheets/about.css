@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 body::-webkit-scrollbar {
   display: none;
@@ -117,14 +117,14 @@ body::-webkit-scrollbar {
 }
 .headLine{
   transition: 150ms ease-in-out 0ms;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 0px;
   color: #3f00c7;
 }
 .story{
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 60px;
   font-weight: 800;
   line-height: 1.3;
@@ -147,7 +147,7 @@ body::-webkit-scrollbar {
 }
 .paraHead{
   width: 350px;
-  font-family: 'Plus Jakarta Sans', sans-serif;  
+  font-family: "Sora", sans-serif;  
   font-size: 20px;
   font-weight: 800;
   line-height: 1.4;
@@ -156,7 +156,7 @@ body::-webkit-scrollbar {
 }
 .paraTxt{
   width: 400px;
-  font-family: 'Plus Jakarta Sans', sans-serif;  
+  font-family: "Sora", sans-serif;  
   font-size: 13px;
   font-weight: 600;
   line-height: 1.4;
@@ -298,7 +298,7 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 .vmTitle{
-  font-family: 'Plus Jakarta Sans', sans-serif;  
+  font-family: "Sora", sans-serif;  
   font-size: 30px;
   font-weight: 800;
   line-height: 1.3;
@@ -307,7 +307,7 @@ body::-webkit-scrollbar {
   display: flex;
 }
 .vmBody{
-  font-family: 'Plus Jakarta Sans', sans-serif;  
+  font-family: "Sora", sans-serif;  
   font-size: 13px;
   font-weight: 600;
   line-height: 1.3;
@@ -364,7 +364,7 @@ body::-webkit-scrollbar {
 }
 .headLine1{
   transition: 150ms ease-in-out 0ms;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 0px;
@@ -374,7 +374,7 @@ body::-webkit-scrollbar {
   stroke-width: 1.5px !important; 
 }
 .valuesTitle{
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.3;
@@ -410,7 +410,7 @@ body::-webkit-scrollbar {
   background-clip: padding-box, border-box; */
 }
 .valueTxt{
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 15px;
   font-weight: 800;
   line-height: 1.3;
@@ -419,7 +419,7 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 .valueDesc{
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 11px;
   letter-spacing: 0px;
   font-weight: 500;
@@ -442,7 +442,7 @@ body::-webkit-scrollbar {
   text-align: center;
 }
 .clientelle{
-  /* font-family: 'Plus Jakarta Sans', sans-serif; */
+  /* font-family: "Sora", sans-serif; */
   font-size: 15px;
   font-weight: 600;
   line-height: 1;
